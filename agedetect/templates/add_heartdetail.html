@@ -1,0 +1,136 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block body %}
+	<!-- register -->
+
+	<style>
+		/* Add this style to make the input box square */
+		.square-input {
+			border-width: 1px; /* Adjust the border size as needed */
+        border-color: black;
+		}
+	</style>
+
+	<section class="logins py-5">
+		<div class="container py-xl-5 py-lg-3">
+			<div class="title-section mb-md-5 mb-3">
+				<h6 class="w3ls-title-sub"></h6>
+				<h3 class="w3ls-title text-uppercase text-dark font-weight-bold">Add Heart Detail</h3><hr/>
+			</div>
+			<div class="login px-sm-12" style="width:100%">
+				<form action="" method="post" enctype="multipart/form-data">
+					{% csrf_token %}
+					<div class="form-group row">
+						<div class="col-md-3">
+							<label class="mb-2" style="font-weight: bold; font-family: 'YourChosenFont', sans-serif;">Age</label>
+							<input type="number" class="form-control square-input rounded-0" name="age" required="">
+						</div>
+						<div class="col-md-3">
+							<label class="mb-2" style="font-weight: bold; font-family: 'YourChosenFont', sans-serif;">Gender</label>
+							<select class="form-control square-input rounded-0" style="cursor: pointer;" name="sex" required="">
+								<option value="0">Male</option>
+								<option value="1">Female</option>
+								<option value="1">Transgender</option>
+							</select>
+						</div>
+						<div class="col-md-3">
+							<label class="mb-2" style="font-weight: bold; font-family: 'YourChosenFont', sans-serif;">Chest Pain Type</label>
+							<select class="form-control square-input rounded-0" style="cursor: pointer;" name="cp" required="">
+								<option value="0">None</option>
+								<option value="1">Typical Angina</option>
+								<option value="2">Atypical Angina</option>
+								<option value="3">Non-Angina</option>
+							</select>
+						</div>
+
+						<div class="col-md-3">
+							<label class="mb-2" style="font-weight: bold; font-family: 'YourChosenFont', sans-serif;">Resting Blood Pressure</label>
+							<input type="number" class="form-control square-input rounded-0" name="trestbps" required="">
+						</div>
+						
+					</div>
+
+					<div class="form-group row mt-4">
+						<div class="col-md-3">
+							<label class="mb-2" style="font-weight: bold; font-family: 'YourChosenFont', sans-serif;">Serum Cholestrol</label>
+							<input type="number" class="form-control square-input rounded-0" name="chole" required="">
+						</div>
+						<div class="col-md-3">
+							<label class="mb-2" style="font-weight: bold; font-family: 'YourChosenFont', sans-serif;">Fasting Blood Sugar</label>
+							<select class="form-control square-input rounded-0" style="cursor: pointer;" name="fbs" required="">
+								<option value="0"> < 120 mg/dl </option>
+								<option value="1"> > 120 mg/dl</option>
+							</select>
+						</div>
+						<div class="col-md-3">
+							<label class="mb-2" style="font-weight: bold; font-family: 'YourChosenFont', sans-serif;">Resting  Electrocardiographic Result</label>
+							<select class="form-control square-input rounded-0" style="cursor: pointer;" name="restecg" required="">
+								<option value="0">Normal</option>
+								<option value="1">Having ST-T wave abnormality</option>
+								<option value="2">Hypertrophy</option>
+							</select>
+						</div>
+						<div class="col-md-3">
+							<label class="mb-2" style="font-weight: bold; font-family: 'YourChosenFont', sans-serif;">Maximum Heart Rate</label>
+							<input type="number" class="form-control square-input rounded-0" name="thalach" required="">
+						</div>
+						
+						
+					</div>
+					
+
+					<div class="form-group row mt-4">
+						
+					<div class="col-md-3">
+						<label class="mb-2" style="font-weight: bold; font-family: 'YourChosenFont', sans-serif;">Excercise Induced Angina</label>
+						<select class="form-control square-input rounded-0" style="cursor: pointer;" name="exang" required="">
+							<option value="0" >No</option>
+							<option value="1">Yes</option>
+						</select>
+					</div>
+					<div class="col-md-3">
+						<label class="mb-2" style="font-weight: bold; font-family: 'YourChosenFont', sans-serif;">ST Depression</label>
+						<input type="text" class="form-control square-input rounded-0" name="old_peak" required="">
+					</div>
+
+						<div class="col-md-3">
+							<label class="mb-2" style="font-weight: bold; font-family: 'YourChosenFont', sans-serif;">Slope of Peak Excercise ST Segment</label>
+							<select class="form-control square-input rounded-0" style="cursor: pointer;" name="slope" required="">
+								<option value="0">  Upsloping </option>
+								<option value="1">  Flat</option>
+								<option value="2">  Down Sloping</option>
+							</select>
+						</div>
+						<div class="col-md-3">
+							<label class="mb-2" style="font-weight: bold; font-family: 'YourChosenFont', sans-serif;">Thalium Scan Results</label>
+							<select class="form-control square-input rounded-0" style="cursor: pointer;" name="thal" required="">
+								<option value="0">Normal</option>
+								<option value="1">Fixed Defect</option>
+								<option value="2">Reversible Defect</option>
+								<option value="3">Indeterminate or Equivocal</option>
+							</select>
+						</div>
+
+						
+						
+						
+					</div>
+					<div class="form-group row mt-4">
+					<div class="col-md-3">
+						<label class="mb-2" style="font-weight: bold; font-family: 'YourChosenFont', sans-serif;">No. of Major Vessels Colored by Flourosopy</label>
+						<select class="form-control square-input rounded-0" style="cursor: pointer;" name="ca" required="">
+							<option value="0">None</option>
+							<option value="1">One</option>
+							<option value="2">Two</option>
+							<option value="3">Three</option>
+						</select>
+					</div></div>
+
+					<button type="submit" class="btn btn-primary submit mt-4">Send Heart data</button>
+				</form>
+			</div>
+		</div>
+	</section>
+	<!-- //register -->
+
+{% endblock %}

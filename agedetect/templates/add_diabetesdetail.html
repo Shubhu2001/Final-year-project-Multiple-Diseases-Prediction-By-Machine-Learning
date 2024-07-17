@@ -1,0 +1,71 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block body %}
+	<!-- register -->
+
+	<style>
+		/* Add this style to make the input box square */
+		.square-input {
+			border-width: 1px; /* Adjust the border size as needed */
+        border-color: black;
+		}
+	</style>
+
+	<section class="logins py-5">
+		<div class="container py-xl-5 py-lg-3">
+			<div class="title-section mb-md-5 mb-3">
+				<h6 class="w3ls-title-sub"></h6>
+				<h3 class="w3ls-title text-uppercase text-dark font-weight-bold">Diabetes Prediction</h3><hr/>
+			</div>
+			<div class="login px-sm-12" style="width:100%">
+				<form action="" method="post" enctype="multipart/form-data">
+					{% csrf_token %}
+					<div class="form-group row">
+						<div class="col-md-3">
+							<label class="mb-2" style="font-weight: bold; font-family: 'YourChosenFont', sans-serif;">Age</label>
+							<input type="number" class="form-control square-input rounded-0" name="age" required="">
+						</div>
+						<div class="col-md-3">
+							<label class="mb-2" style="font-weight: bold; font-family: 'YourChosenFont', sans-serif;">Number of Pregnancies</label>
+							<input type="number" class="form-control square-input rounded-0" name="nopregnancies" required="">
+						</div>
+						<div class="col-md-3">
+							<label class="mb-2" style="font-weight: bold; font-family: 'YourChosenFont', sans-serif;">Glucose Level</label>
+							<input type="number" class="form-control square-input rounded-0" name="glucoselvl" required="">
+						</div>
+
+						<div class="col-md-3">
+							<label class="mb-2" style="font-weight: bold; font-family: 'YourChosenFont', sans-serif;">Blood Pressure Value</label>
+							<input type="number" class="form-control square-input rounded-0" name="bpv" required="">
+						</div>
+						
+					</div>
+
+					<div class="form-group row mt-4">
+						<div class="col-md-3">
+							<label class="mb-2" style="font-weight: bold; font-family: 'YourChosenFont', sans-serif;">Skin Thickness Value</label>
+							<input type="number" class="form-control square-input rounded-0" name="stval" required="">
+						</div>
+						<div class="col-md-3">
+							<label class="mb-2" style="font-weight: bold; font-family: 'YourChosenFont', sans-serif;">Insulin Level</label>
+							<input type="number" class="form-control square-input rounded-0" name="inslvl" required="">
+						</div>
+						<div class="col-md-3">
+							<label class="mb-2" style="font-weight: bold; font-family: 'YourChosenFont', sans-serif;">BMI Value</label>
+							<input type="text" class="form-control square-input rounded-0" name="bmval" required="">
+						</div>
+						<div class="col-md-3">
+							<label class="mb-2" style="font-weight: bold; font-family: 'YourChosenFont', sans-serif;">Diabetes Pedigree Function Value</label>
+							<input type="text" class="form-control square-input rounded-0" name="dpfval" required="">
+						</div>
+					</div>
+					
+
+					<button type="submit" class="btn btn-primary submit mt-4">Check Result</button>
+				</form>
+			</div>
+		</div>
+	</section>
+	<!-- //register -->
+
+{% endblock %}

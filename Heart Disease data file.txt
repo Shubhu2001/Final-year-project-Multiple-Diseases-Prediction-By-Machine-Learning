@@ -1,0 +1,54 @@
+
+
+#Healthy Person Heart Disease Data
+
+age, sex, cp, trestbps, chol, fbs, restecg, thalach, exang, oldpeak, slope, thal, ca
+
+60, Female, None, 125, 258, < 120mg/dl, Normal, 141, Yes, 2.8, Flat,  Indeterminate or Equivocal, One
+
+58, Female, None, 150, 270, < 120mg/dl, Normal, 111, Yes, 0.8, Down Sloping,  Indeterminate or Equivocal, None
+
+68, Female, Atypical Angina, 180, 274, > 120mg/dl, Normal, 150, Yes, 1.6, Flat,  Indeterminate or Equivocal, None
+
+62, Male, None, 160, 164, < 120mg/dl, Normal, 145, No, 6.2, Upsloping,  Indeterminate or Equivocal, Three
+
+57, Female, Atypical Angina, 128, 229, < 120mg/dl, Normal, 150, No, 0.4, Flat,  Indeterminate, One
+
+61, Female, None, 120, 260, < 120mg/dl, Having ST-T wave abnormality, 140, Yes, 3.6, Flat,  Indeterminate or Equivocal, One
+
+39, Female, None, 118, 219, < 120mg/dl, Having ST-T wave abnormality, 140, No, 1.2, Flat,  Indeterminate or Equivocal, None
+
+
+
+
+#UnHealthy Person Heart Disease Data
+
+age, sex, cp, trestbps, chol, fbs, restecg, thalach, exang, oldpeak, slope, thal, ca
+
+63, Female, Non-Angina, 145, 233, > 120mg/dl, Normal, 150, No, 2.3, Upsloping, Fixed Defect, None
+
+37, Female, Atypical Angina, 130, 250, < 120mg/dl, Having ST-T Wave Abnormity, 187, No, 3.5, Upsloping, Reversible Defect, None
+
+41, Male, Typical Angina, 130, 204, < 120mg/dl, Normal, 172, No, 1.4, Down Sloping, Reversible Defect, None
+
+56, Female, Typical Angina, 120, 236, < 120mg/dl, Having ST-T Wave Abnormity, 178, No, 0.8, Down Sloping, Reversible Defect, None
+
+57, Male, None, 120, 354, < 120mg/dl, Having ST-T Wave Abnormity, 163, Yes, 0.6, Down Sloping, Reversible Defect, None
+
+57, Female, None, 140, 192, < 120mg/dl, Having ST-T Wave Abnormity, 148, No,   0. 4, Flat, Fixed Defect, None
+
+56, Male, Typical Angina, 140, 294, < 120mg/dl, Normal, 153, No, 1.3, Flat, Reversible Defect, None
+
+44, Female, Typical Angina, 120, 263, < 120mg/dl, Having ST-T Wave Abnormity, 173, No, 0, Down Sloping, Indeterminate or Equivocal, None
+
+52, Female, Atypical Angina, 172, 199, > 120mg/dl, Having ST-T Wave Abnormity, 162, No, 0.5, Down Sloping, Indeterminate or Equivocal, None
+
+57, Female, Atypical Angina, 150, 168, < 120mg/dl, Having ST-T Wave Abnormity, 174, No, 1.6, Down Sloping, Reversible Defect, None
+
+54, Female, None, 140, 239, < 120mg/dl, Having ST-T Wave Abnormity, 160, No, 1.2, Down Sloping, Reversible Defect, None
+
+48, Male, Atypical Angina, 130, 275, < 120mg/dl, Having ST-T Wave Abnormity, 139, No, 0.2, Down Sloping, Reversible Defect, None
+
+49, Female, Typical Angina, 130, 266, < 120mg/dl, Having ST-T Wave Abnormity, 171, No, 0.6, Down Sloping, Reversible Defect, None
+
+64, Female, Non-Angina, 110, 211, < 120mg/dl, Normal, 144, Yes, 1.8, Flat, Reversible Defect, None
